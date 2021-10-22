@@ -1,6 +1,5 @@
 ARG node_version
 FROM node:$node_version as build-step
-ENV NODE_ENV=production
 
 RUN mkdir -p /app
 
