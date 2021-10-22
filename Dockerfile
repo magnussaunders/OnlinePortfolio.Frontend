@@ -12,7 +12,7 @@ RUN npm install
 
 COPY . /app
 
-RUN npm run build-prod
+RUN npm run build
 
 FROM nginx:latest
 COPY --from=build-step /app/docs /usr/share/nginx/html
