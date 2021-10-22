@@ -14,4 +14,4 @@ COPY . /app
 RUN npm run build
 
 FROM nginx:latest
-COPY --from=build-step /app/docs /usr/share/nginx/html
+COPY --from=build-step /app/dist/OnlinePortfolio-Frontend /usr/share/nginx/html
