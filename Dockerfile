@@ -15,4 +15,4 @@ RUN npm run build
 
 FROM nginx:latest
 COPY --from=build-step /app/dist/OnlinePortfolio-Frontend /usr/share/nginx/html
-EXPOSE 80
+CMD gunicorn --bind 0.0.0.0:$PORT wsgi
