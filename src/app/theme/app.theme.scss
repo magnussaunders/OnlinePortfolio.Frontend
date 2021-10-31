@@ -2,6 +2,8 @@
 @import './color-palettes.mixin.scss';
 @import './typography-config.mixin.scss';
 
+@include material.core();
+
 $blue-palette: $primary-palette;
 $pink-palette: $pink-palette;
 $orange-palette: $orange-palette;
@@ -13,3 +15,6 @@ $app-theme: material.define-dark-theme((
         orange-accent: $orange-palette
     )
 ));
+
+@include material.all-component-themes($app-theme);
+@include material.core-theme($app-theme);
