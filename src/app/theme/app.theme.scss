@@ -1,0 +1,15 @@
+@use '~@angular/material' as material;
+@import './color-palettes.mixin.scss';
+@import './typography-config.mixin.scss';
+
+$blue-palette: $primary-palette;
+$pink-palette: $pink-palette;
+$orange-palette: $orange-palette;
+
+$app-theme: material.define-dark-theme((
+    color: (
+        primary: $primary-palette,
+        accent: $pink-palette,
+        orange-accent: $orange-palette
+    )
+));
