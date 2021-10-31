@@ -4,13 +4,13 @@
 
 @include material.core();
 
-$blue-palette: $primary-palette;
+$blue-palette: $blue-palette;
 $pink-palette: $pink-palette;
 $orange-palette: $orange-palette;
 
 $app-theme: material.define-dark-theme((
     color: (
-        primary: $primary-palette,
+        primary: $blue-palette,
         accent: $pink-palette,
         orange-accent: $orange-palette
     )
