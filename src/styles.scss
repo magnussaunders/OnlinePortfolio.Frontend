@@ -1,3 +1,9 @@
 @use '~@angular/material' as material;
 @import './app/theme/app.theme.scss';
 @import '../src/app/styles/text-styles.scss';
+@import '../src/app/styles/button-styles.scss';
+
+body {
+    background-color: material.get-color-from-palette($blue-palette, 500);
+    margin: 0px;
+}
