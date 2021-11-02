@@ -39,7 +39,7 @@ img {
     height: 75%;
 }
 
-#navbar-item {
+.navbar-item {
     display: flex;
     align-self: center;
     margin-left: 15px;
@@ -57,21 +57,21 @@ p {
     line-height: 16px;
 }
 
-#navbar-item:hover p{
+.navbar-item:hover p {
     color: material.get-color-from-palette($pink-palette, 500);
     transition: all .5s ease;
 }
 
-#navbar-item:hover{
+.navbar-item:hover{
     transform: perspective(1px) scale(1.1);
     transition: all .5s ease;
 }
 
 
-div.isSelected{
+div.selected {
     border-bottom: 3px solid material.get-color-from-palette($pink-palette, 500) !important;
 }
-p.isSelected{
+p.selected{ 
     color: material.get-color-from-palette($pink-palette, 500) !important;
 }
 
