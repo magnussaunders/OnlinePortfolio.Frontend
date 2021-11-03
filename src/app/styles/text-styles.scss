@@ -4,6 +4,7 @@
 .section-header {
     font-family: Roboto;
     font-size: 36px;
+    font-weight: 400;
     color: material.get-color-from-palette($blue-palette, 300-contrast);
 }
 
@@ -24,6 +25,7 @@
 .paragraph-body {
     font-family: Roboto;
     font-size: 18px;
+    font-weight: 400;
     color: material.get-color-from-palette($blue-palette, 300-contrast);
 }
 
