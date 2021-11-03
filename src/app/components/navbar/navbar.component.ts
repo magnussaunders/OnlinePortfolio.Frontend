@@ -9,7 +9,7 @@ import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
 export class NavbarComponent implements OnInit {
   currentRoute = '';
 
-  constructor(private route: ActivatedRoute, private router: Router) { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
     this.router.events.subscribe(result => {
