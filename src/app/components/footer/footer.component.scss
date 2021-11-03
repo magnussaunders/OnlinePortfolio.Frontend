@@ -43,6 +43,7 @@
 #email-address {
     line-height: 14px;
     backface-visibility: hidden;
+    cursor: pointer;
 }
 
 #email-address:hover {
@@ -70,6 +71,7 @@
     align-items: center;
     padding: 5px;
     transition: all 0.5s ease;
+    cursor: pointer;
 
     &:hover {
         transform: scale(1.1);
