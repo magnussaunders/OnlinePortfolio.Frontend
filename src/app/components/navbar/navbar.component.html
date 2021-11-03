@@ -4,16 +4,16 @@
         <h1 class="paragraph-header accent">KYLE<br>SAUNDERS</h1>
     </div>
     <div id="navbar-items" >
-        <div class="navbar-item selected" routerLink="/">
-            <p class="paragraph-subheader selected">Home</p>
+        <div [ngClass]="{'selected': currentRoute == '/'}" class="navbar-item" routerLink="/">
+            <p class="paragraph-subheader">Home</p>
         </div>
-        <div class="navbar-item selected" routerLink="/AboutMe">
-            <p class="paragraph-subheader selected">About me</p>
+        <div [ngClass]="{'selected': currentRoute == '/AboutMe'}" class="navbar-item" routerLink="/AboutMe">
+            <p class="paragraph-subheader">About me</p>
         </div>
-        <div class="navbar-item" routerLink="/Career">
+        <div [ngClass]="{'selected': currentRoute == '/Career'}" class="navbar-item" routerLink="/Career">
             <p class="paragraph-subheader">Career</p>
         </div>
-        <div class="navbar-item" routerLink="/Projects">
+        <div [ngClass]="{'selected': currentRoute == '/Projects'}" class="navbar-item" routerLink="/Projects">
             <p class="paragraph-subheader">Projects<br>Repos</p>
         </div>
     </div>

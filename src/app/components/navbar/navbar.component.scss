@@ -50,7 +50,7 @@ img {
     box-sizing: border-box;
     text-align: center;
     border-bottom: 3px solid transparent;
-    transition: all .5s ease;
+    transition: all .2s ease;
     backface-visibility: hidden;
     cursor: pointer;
 }
@@ -62,20 +62,21 @@ p {
 
 .navbar-item:hover p {
     color: material.get-color-from-palette($pink-palette, 500);
-    transition: all .5s ease;
+    transition: all .2s ease;
 }
 
 .navbar-item:hover{
     transform: perspective(1px) scale(1.1);
-    transition: all .5s ease;
+    transition: all .2s ease;
 }
 
 
-div.selected {
+.selected {
     border-bottom: 3px solid material.get-color-from-palette($pink-palette, 500) !important;
-}
-p.selected{ 
-    color: material.get-color-from-palette($pink-palette, 500) !important;
+
+    p {
+        color: material.get-color-from-palette($pink-palette, 500) !important; 
+    }
 }
 
 #navbar-actions {
