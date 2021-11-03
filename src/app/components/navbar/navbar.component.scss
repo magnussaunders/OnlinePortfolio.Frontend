@@ -11,7 +11,8 @@
     display: flex;
     flex-direction: row;
     padding: 10px 15px 0px 15px;
-    background: rgba(material.get-color-from-palette($blue-palette, 500), 0.85)
+    background: rgba(material.get-color-from-palette($blue-palette, 500), 0.8);
+    backdrop-filter: blur(2.5px);
 }
 
 img {
