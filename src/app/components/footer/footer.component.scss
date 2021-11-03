@@ -1,0 +1,88 @@
+@use '~@angular/material' as material;
+@import '../../theme/app.theme.scss';
+
+
+#footer {
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 75px;
+    min-height: 20px;
+    display: flex;
+    flex-direction: row;
+    padding: 0px 0px 10px 0px;
+    background: transparent;
+    justify-content: space-between;
+}
+
+#media-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: fit-content;
+    padding: 2px 15px 2px 30px;
+    background: rgba(material.get-color-from-palette($blue-palette, 500), 0.8);
+    border-radius: 0% 50px 50px 0%;
+    backdrop-filter: blur(2.5px);
+    align-self: center;
+}
+
+#contact-details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: fit-content;
+    padding: 10px 0px 10px 20px;
+    background: rgba(material.get-color-from-palette($blue-palette, 500), 0.8);
+    border-radius: 50px 0px 0px 50px;
+    backdrop-filter: blur(2.5px);
+    align-self: center;
+}
+
+#email-address {
+    line-height: 14px;
+    backface-visibility: hidden;
+}
+
+#email-address:hover {
+    color: material.get-color-from-palette($pink-palette, 500);
+    transform: scale(1.05);
+    transition: all 0.5s ease-in-out;
+    transform-origin: right;
+}
+
+#email-address:not(:hover) {
+    color: #ffffff;
+    transform: scale(1);
+    transition: all 0.5s ease-in-out;
+}
+
+#line {
+    width: 100px;
+    height: 2px;
+    background-color: #FFFFFF;
+    margin-left: 10px;
+}
+
+.media-link {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    transition: all 0.5s ease;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    &:hover path {
+        fill: url(#my-cool-gradient);
+    }
+}
+
+.media-link svg {
+    width: 25px;
+    height: 25px;
+    fill: #FFFFFF;
+    transition: all 0.5s ease;
+}
