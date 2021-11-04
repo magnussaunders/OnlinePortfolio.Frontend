@@ -1,5 +1,4 @@
 import { Component, ElementRef, OnInit, TemplateRef, ViewChild } from '@angular/core';
-import { CarouselModule } from 'ngx-owl-carousel-o';
 @Component({
   selector: 'app-about-me-page',
   templateUrl: './about-me-page.component.html',
