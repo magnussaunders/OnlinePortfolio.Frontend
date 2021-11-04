@@ -6,7 +6,6 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
   styleUrls: ['./about-me-page.component.scss']
 })
 export class AboutMePageComponent implements OnInit {
-  @ViewChild('journeyItems') journeyItemsRef: any
   public journeyCurrentIndex = 1;
 
   constructor() { }
