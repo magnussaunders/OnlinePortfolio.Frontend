@@ -2,12 +2,18 @@
 @import './app/theme/app.theme.scss';
 @import '../src/app/styles/text-styles.scss';
 @import '../src/app/styles/button-styles.scss';
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
 
 body {
     background-color: material.get-color-from-palette($blue-palette, 500);
     margin: 0px;
     width: 100%;
     height: 100%;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
 }
 
 html {
