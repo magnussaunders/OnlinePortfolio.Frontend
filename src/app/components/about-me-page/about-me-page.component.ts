@@ -17,9 +17,9 @@ export class AboutMePageComponent implements OnInit {
   journeyNavigatePrevious() {
     if (this.journeyCurrentIndex === 1) {
       this.journeyCurrentIndex = 4
-      document.getElementById('journey-items')!.style.transform = "translate(-66.66%, 0%)"
+      document.getElementById('journey-items')!.style.transform = "translate(-99.99%, 0%)"
     } else {
-      document.getElementById('journey-items')!.style.transform = "translate(" + ((this.journeyCurrentIndex - 3) * -33.33).toString() + "%, 0%)"
+      document.getElementById('journey-items')!.style.transform = "translate(" + ((this.journeyCurrentIndex - 2) * -33.33).toString() + "%, 0%)"
       this.journeyCurrentIndex = this.journeyCurrentIndex - 1
     }
   }
@@ -27,9 +27,9 @@ export class AboutMePageComponent implements OnInit {
   journeyNavigateNext() {
     if (this.journeyCurrentIndex === 4) {
       this.journeyCurrentIndex = 1
-      document.getElementById('journey-items')!.style.transform = "translate(33.33%, 0%)"
+      document.getElementById('journey-items')!.style.transform = "translate(0%, 0%)"
     } else {
-      document.getElementById('journey-items')!.style.transform = "translate(" + ((this.journeyCurrentIndex - 1) * -33.33).toString() + "%, 0%)"
+      document.getElementById('journey-items')!.style.transform = "translate(" + ((this.journeyCurrentIndex) * -33.33).toString() + "%, 0%)"
       this.journeyCurrentIndex = this.journeyCurrentIndex + 1
     }
   }

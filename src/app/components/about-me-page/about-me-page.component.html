@@ -26,6 +26,14 @@
         <div id="journey-container">
             <div id="journey-items" #journeyItems>
                 <li class="journey-item-container">
+                    <div [ngClass]="{'hidden-left' : 4 < journeyCurrentIndex, 'hidden-right' : 4 > journeyCurrentIndex}" class="journey-item hidden">
+                        <div class="overlay-left"></div>
+                        <div class="overlay-right"></div>
+                        <h1 class="paragraph-subheader accent">What's next</h1>
+                        <p class="paragraph-body">Right now I spend my time installing, implementing and integrating enterprise tools from the likes of CA Technologies, Microfocus and Broadcom to build Solutions and systems for clients. I currently specialize in Service Management, Business Intelligence and Test Data Management, primarily working with tools such as CA Servicedesk Manager, CA Service Catalog, TIBCO Jaspersoft and CA Test Data Manager.</p>
+                    </div>
+                </li>
+                <li class="journey-item-container">
                     <div [ngClass]="{'hidden-left' : 1 < journeyCurrentIndex, 'hidden-right' : 1 > journeyCurrentIndex}" class="journey-item">
                         <div class="overlay-left"></div>
                         <div class="overlay-right"></div>
@@ -57,6 +65,15 @@
                         <p class="paragraph-body">Right now I spend my time installing, implementing and integrating enterprise tools from the likes of CA Technologies, Microfocus and Broadcom to build Solutions and systems for clients. I currently specialize in Service Management, Business Intelligence and Test Data Management, primarily working with tools such as CA Servicedesk Manager, CA Service Catalog, TIBCO Jaspersoft and CA Test Data Manager.</p>
                     </div>
                 </li>
+                <li class="journey-item-container">
+                    <div [ngClass]="{'hidden-left' : 4 < journeyCurrentIndex, 'hidden-right' : 4 > journeyCurrentIndex}" class="journey-item hidden">
+                        <div class="overlay-left"></div>
+                        <div class="overlay-right"></div>
+                        <h1 class="paragraph-subheader accent">How it started</h1>
+                        <p class="paragraph-body">Right now I spend my time installing, implementing and integrating enterprise tools from the likes of CA Technologies, Microfocus and Broadcom to build Solutions and systems for clients. I currently specialize in Service Management, Business Intelligence and Test Data Management, primarily working with tools such as CA Servicedesk Manager, CA Service Catalog, TIBCO Jaspersoft and CA Test Data Manager.</p>
+                    </div>
+                </li>
+                
             </div>
             <div id="overlays">
                 <div class="overlay-left"></div>

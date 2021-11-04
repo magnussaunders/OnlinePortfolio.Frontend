@@ -132,7 +132,6 @@
     flex-direction: row;
     align-items: center;
     flex-wrap: nowrap;
-    transform: translate(33.33%, 0%);
     transition: all 0.5s ease;
 }
 
@@ -196,6 +195,15 @@
 
     p {
         margin: 0px;
+    }
+}
+
+.hidden {
+    h1 {
+        color: #555555 !important;
+    }
+    p {
+        color: #999999 !important;
     }
 }
 
