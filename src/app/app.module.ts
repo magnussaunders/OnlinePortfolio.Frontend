@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -9,6 +9,8 @@ import { AboutMePageComponent } from './components/about-me-page/about-me-page.c
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
 import { CareerPageComponent } from './components/career-page/career-page.component';
 import { ProjectsPageComponent } from './components/projects-page/projects-page.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +23,8 @@ import { ProjectsPageComponent } from './components/projects-page/projects-page.
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]
