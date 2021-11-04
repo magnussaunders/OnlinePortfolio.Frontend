@@ -12,7 +12,17 @@ body {
     height: 100%;
 
     &::-webkit-scrollbar {
-        display: none;
+        height: 50px;
+        width: 5px;
+    }
+    &::-webkit-scrollbar-track {
+        width: 2px;
+        background: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+        height: 30px;
+        background: material.get-color-from-palette($blue-palette, 400);
+        border-radius: 5px;
     }
 }
 
