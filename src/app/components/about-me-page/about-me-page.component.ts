@@ -13,7 +13,7 @@ export class AboutMePageComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  journeyNavigatePrevious() {
+  public journeyNavigatePrevious() : void{
     if (this.journeyCurrentIndex === 1) {
       this.journeyCurrentIndex = 4
       document.getElementById('journey-items')!.style.transform = "translate(-99.99%, 0%)"
@@ -23,7 +23,7 @@ export class AboutMePageComponent implements OnInit {
     }
   }
 
-  journeyNavigateNext() {
+  public journeyNavigateNext() : void{
     if (this.journeyCurrentIndex === 4) {
       this.journeyCurrentIndex = 1
       document.getElementById('journey-items')!.style.transform = "translate(0%, 0%)"
@@ -33,7 +33,7 @@ export class AboutMePageComponent implements OnInit {
     }
   }
 
-  journeyNavigateTo(index: number) {
+  public journeyNavigateTo(index: number) :void {
       if (index) {
         this.journeyCurrentIndex = index;
         document.getElementById('journey-items')!.style.transform = "translate(" + ((this.journeyCurrentIndex - 2) * -33.33).toString() + "%, 0%)"
