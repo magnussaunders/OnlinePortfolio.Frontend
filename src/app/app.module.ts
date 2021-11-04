@@ -10,7 +10,6 @@ import { LandingPageComponent } from './components/landing-page/landing-page.com
 import { CareerPageComponent } from './components/career-page/career-page.component';
 import { ProjectsPageComponent } from './components/projects-page/projects-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { CarouselModule } from 'ngx-owl-carousel-o';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +23,6 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]
