@@ -1,0 +1,30 @@
+#career-container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+#experience-container {
+    width: 30%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.experience-item {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-content: center;
+
+    p {
+        margin: 10px 20px;
+        width: 50%;
+    }
+
+}
+
+:host {
+    height: 100%;
+}
