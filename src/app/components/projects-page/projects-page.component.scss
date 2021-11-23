@@ -1,0 +1,129 @@
+@use '~@angular/material' as material;
+@import '../../theme/app.theme.scss';
+
+#projects-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#more-projects-container {
+  position: relative;
+  max-width: 70%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 300px) );
+  grid-auto-rows: auto;
+  justify-content: center;
+  //&:hover .project{
+  //  filter: blur(10px);
+  //}
+}
+
+.project-description {
+  margin: 15px 0px;
+}
+
+#blur-overlay {
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  visibility: hidden;
+}
+
+.project-resources {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: hidden;
+  max-height: 0px;
+}
+
+.project-resource {
+  height: 25px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 15px;
+  background-color: material.get-color-from-palette($blue-palette, 600);
+  align-items: center;
+  margin: 2px 0px;
+
+  &:hover {
+    & p {
+      color: material.get-color-from-palette($pink-palette, 600);
+    }
+  }
+
+  & svg {
+    height: 25px;
+    width: auto;
+  }
+
+  & p {
+      margin: 5px 10px 5px 5px;
+  }
+}
+
+.project {
+  position: relative;
+  max-width: 300px;
+  min-width: 250px;
+  box-sizing: border-box;
+  padding: 8px;
+  transition: transform 0.5s ease, filter 0s ease;
+  transform: translateZ(0);
+  -webkit-font-smoothing: subpixel-antialiased;
+
+  &:hover {
+    z-index: 2;
+    filter: none !important;
+  }
+  &:hover .project-resources {
+    max-height: 500px;
+    transition: all 2s ease;
+  }
+  &:hover .card {
+    position: absolute;
+    transform: scale(1.1);
+    background: linear-gradient(material.get-color-from-palette($blue-palette, 400), material.get-color-from-palette($blue-palette, 400)) padding-box, linear-gradient(to bottom right, material.get-color-from-palette($pink-palette, 500), material.get-color-from-palette($orange-palette, 500) 100%) border-box;
+    filter: blur(0px);
+    box-shadow: 0px 0px 50px 50px material.get-color-from-palette($blue-palette, 500);
+  }
+  & .card {
+    padding: 10px;
+    border-radius: 10px;
+    border: 3px solid transparent;
+    transition: all 0.2s ease-in, box-shadow 0.0s ease-in;
+    background: material.get-color-from-palette($blue-palette, 400);
+  }
+}
+
+.tags-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 15px 0px 10px 0px !important;
+}
+
+.tag {
+  margin: 0px 30px 0px 0px;
+}
+
+.line {
+  width: 100px;
+  height: 2px;
+  background-color: rgba(material.get-color-from-palette($blue-palette, 300-contrast), 0.3);
+}
+
+#more-projects-title {
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content: center;
+  h1 {
+    margin: 10px;
+  }
+}
