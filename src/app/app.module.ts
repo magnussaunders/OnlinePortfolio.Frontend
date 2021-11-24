@@ -10,7 +10,6 @@ import { LandingPageComponent } from './components/landing-page/landing-page.com
 import { CareerPageComponent } from './components/career-page/career-page.component';
 import { ProjectsPageComponent } from './components/projects-page/projects-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {IvyCarouselModule} from 'angular-responsive-carousel';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,8 +22,7 @@ import {IvyCarouselModule} from 'angular-responsive-carousel';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    IvyCarouselModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
