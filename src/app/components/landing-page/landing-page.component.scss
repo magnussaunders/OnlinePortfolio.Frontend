@@ -1,0 +1,85 @@
+@use '~@angular/material' as material;
+@import '../../theme/app.theme.scss';
+
+#hero-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+#hero-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    position: relative;
+}
+
+#portrait {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-image: url('../../../assets/images/Intersect.png');
+
+    &:before {
+        content: '';
+        border-radius: 50%;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 10px;
+        right: 10px;
+        z-index: -2;
+        background: linear-gradient(material.get-color-from-palette($pink-palette, 500), material.get-color-from-palette($orange-palette, 500));
+    }
+
+    &:after {
+        content: '';
+        border-radius: 50%;
+        position: absolute;
+        height: 98%;
+        width: 98%;
+        top: 13px;
+        right: 13px;
+        z-index: -1;
+        background: material.get-color-from-palette($blue-palette, 500);
+    }
+}
+
+#hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 40%;
+}
+
+:host {
+    height: 100%;
+    width: 100%;
+}
+
+#greeting {
+    margin: 0px 0px;
+    font-size: 20px;
+}
+
+#my-name {
+    margin: 5px 0px;
+    font-size: 72px;
+}
+
+#headline {
+    margin: 5px 0px;
+    color: material.get-color-from-palette($blue-palette, 500-contrast) !important;
+    font-size: 60px;
+}
+
+#blurb {
+    margin: 0px 0px;
+    color: material.get-color-from-palette($blue-palette, 500-contrast) !important;
+    font-size: 20px;
+}

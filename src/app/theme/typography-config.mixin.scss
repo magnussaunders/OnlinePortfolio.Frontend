@@ -1,0 +1,18 @@
+@use '~@angular/material' as material;
+
+$my-typography: material.define-typography-config(
+    $display-4: material.define-typography-level(
+        $font-family: Roboto Mono,
+        $font-weight: 400,
+        $font-size: 36px,
+        $line-height: 1,
+        $letter-spacing: normal
+    ),
+    $display-3: material.define-typography-level(
+        $font-family: Roboto,
+        $font-weight: 400,
+        $font-size: 24px,
+        $line-height: 1,
+        $letter-spacing: normal
+    )
+);

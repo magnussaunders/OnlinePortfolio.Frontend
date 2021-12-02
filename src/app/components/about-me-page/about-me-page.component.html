@@ -1,0 +1,101 @@
+<div id="about-me-container">
+    <div id="blurb-container">
+        <div id="blurb-title">
+            <div class="line"></div>
+            <h1 class="section-header">Who am I?</h1> 
+            <div class="line"></div>
+        </div>
+        <div id="blurb-body">
+            <div id="blurb-paragraph">
+                <p id="personal-description" class="paragraph-body">Right now I spend my time installing, implementing and integrating enterprise tools from the likes of CA Technologies, Microfocus and Broadcom to build Solutions and systems for clients. I currently specialize in Service Management, Business Intelligence and Test Data Management, primarily working with tools such as CA Servicedesk Manager, CA Service Catalog, TIBCO Jaspersoft and CA Test Data Manager.</p>
+                <p id="personal-description" class="paragraph-subheader accent">Confident       Eruditory       Ingenuitive         Ambitious</p>
+            </div>
+            <div id="blurb-image">
+                <div id="hero-image">
+                    <div id="portrait"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="journey">
+        <div id="journey-title">
+            <div class="line"></div>
+            <h1 class="section-header">Journey</h1> 
+            <div class="line"></div>
+        </div>
+        <div id="journey-container">
+            <div id="journey-items" #journeyItems>
+                <li class="journey-item-container">
+                    <div [ngClass]="{'hidden-left' : 4 < journeyCurrentIndex, 'hidden-right' : 4 > journeyCurrentIndex}" class="journey-item hidden">
+                        <div class="overlay-left"></div>
+                        <div class="overlay-right"></div>
+                        <h1 class="paragraph-subheader accent">What's next</h1>
+                        <p class="paragraph-body">Right now I spend my time installing, implementing and integrating enterprise tools from the likes of CA Technologies, Microfocus and Broadcom to build Solutions and systems for clients. I currently specialize in Service Management, Business Intelligence and Test Data Management, primarily working with tools such as CA Servicedesk Manager, CA Service Catalog, TIBCO Jaspersoft and CA Test Data Manager.</p>
+                    </div>
+                </li>
+                <li class="journey-item-container">
+                    <div [ngClass]="{'hidden-left' : 1 < journeyCurrentIndex, 'hidden-right' : 1 > journeyCurrentIndex}" class="journey-item">
+                        <div class="overlay-left"></div>
+                        <div class="overlay-right"></div>
+                        <h1 class="paragraph-subheader accent">How it started</h1>
+                        <p class="paragraph-body">Right now I spend my time installing, implementing and integrating enterprise tools from the likes of CA Technologies, Microfocus and Broadcom to build Solutions and systems for clients. I currently specialize in Service Management, Business Intelligence and Test Data Management, primarily working with tools such as CA Servicedesk Manager, CA Service Catalog, TIBCO Jaspersoft and CA Test Data Manager.</p>
+                    </div>
+                </li>
+                <li class="journey-item-container">
+                    <div [ngClass]="{'hidden-left' : 2 < journeyCurrentIndex, 'hidden-right' : 2 > journeyCurrentIndex}" class="journey-item">
+                        <div class="overlay-left"></div>
+                        <div class="overlay-right"></div>
+                        <h1 class="paragraph-subheader accent">How I got here</h1>
+                        <p class="paragraph-body">Right now I spend my time installing, implementing and integrating enterprise tools from the likes of CA Technologies, Microfocus and Broadcom to build Solutions and systems for clients. I currently specialize in Service Management, Business Intelligence and Test Data Management, primarily working with tools such as CA Servicedesk Manager, CA Service Catalog, TIBCO Jaspersoft and CA Test Data Manager.</p>
+                    </div>
+                </li>
+                <li class="journey-item-container">
+                    <div [ngClass]="{'hidden-left' : 3 < journeyCurrentIndex, 'hidden-right' : 3 > journeyCurrentIndex}" class="journey-item">
+                        <div class="overlay-left"></div>
+                        <div class="overlay-right"></div>
+                        <h1 class="paragraph-subheader accent">How it's going'</h1>
+                        <p class="paragraph-body">Right now I spend my time installing, implementing and integrating enterprise tools from the likes of CA Technologies, Microfocus and Broadcom to build Solutions and systems for clients. I currently specialize in Service Management, Business Intelligence and Test Data Management, primarily working with tools such as CA Servicedesk Manager, CA Service Catalog, TIBCO Jaspersoft and CA Test Data Manager.</p>
+                    </div>
+                </li>
+                <li class="journey-item-container">
+                    <div [ngClass]="{'hidden-left' : 4 < journeyCurrentIndex, 'hidden-right' : 4 > journeyCurrentIndex}" class="journey-item">
+                        <div class="overlay-left"></div>
+                        <div class="overlay-right"></div>
+                        <h1 class="paragraph-subheader accent">What's next</h1>
+                        <p class="paragraph-body">Right now I spend my time installing, implementing and integrating enterprise tools from the likes of CA Technologies, Microfocus and Broadcom to build Solutions and systems for clients. I currently specialize in Service Management, Business Intelligence and Test Data Management, primarily working with tools such as CA Servicedesk Manager, CA Service Catalog, TIBCO Jaspersoft and CA Test Data Manager.</p>
+                    </div>
+                </li>
+                <li class="journey-item-container">
+                    <div [ngClass]="{'hidden-left' : 4 < journeyCurrentIndex, 'hidden-right' : 4 > journeyCurrentIndex}" class="journey-item hidden">
+                        <div class="overlay-left"></div>
+                        <div class="overlay-right"></div>
+                        <h1 class="paragraph-subheader accent">How it started</h1>
+                        <p class="paragraph-body">Right now I spend my time installing, implementing and integrating enterprise tools from the likes of CA Technologies, Microfocus and Broadcom to build Solutions and systems for clients. I currently specialize in Service Management, Business Intelligence and Test Data Management, primarily working with tools such as CA Servicedesk Manager, CA Service Catalog, TIBCO Jaspersoft and CA Test Data Manager.</p>
+                    </div>
+                </li>
+                
+            </div>
+            <div id="overlays">
+                <div class="overlay-left"></div>
+                <div class="overlay-right"></div>
+            </div>
+            <div id="journey-navigators">
+                <svg  id="nav-previous" (click)="journeyNavigatePrevious()" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF">
+                    <path d="M0 0h24v24H0V0z" fill="none"/>
+                    <path class="svg-filled-path" d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z"/>
+                </svg>
+                <svg id="nav-next" (click)="journeyNavigateNext()" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF">
+                    <path d="M0 0h24v24H0V0z" fill="none"/>
+                    <path class="svg-filled-path" d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z"/>
+                </svg>
+            </div>
+        </div>
+        <div id="journey-tracker">
+            <div id="slider-line"></div>
+            <div class="slider-point" [ngClass]="{'current' : journeyCurrentIndex == 1}" (click)="journeyNavigateTo(1)"></div>
+            <div class="slider-point" [ngClass]="{'current' : journeyCurrentIndex == 2}" (click)="journeyNavigateTo(2)"></div>
+            <div class="slider-point" [ngClass]="{'current' : journeyCurrentIndex == 3}" (click)="journeyNavigateTo(3)"></div>
+            <div class="slider-point" [ngClass]="{'current' : journeyCurrentIndex == 4}" (click)="journeyNavigateTo(4)"></div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+<div id="navbar" >
+    <div id="navbar-title" routerLink="/">
+        <img src="../../../assets/images/TitleIcon.png">
+        <h1 class="paragraph-header accent">KYLE<br>SAUNDERS</h1>
+    </div>
+    <div id="navbar-items" >
+        <div [ngClass]="{'selected': currentRoute == '/'}" class="navbar-item" routerLink="/">
+            <p class="paragraph-subheader">Home</p>
+        </div>
+        <div [ngClass]="{'selected': currentRoute == '/AboutMe'}" class="navbar-item" routerLink="/AboutMe">
+            <p class="paragraph-subheader">About me</p>
+        </div>
+        <div [ngClass]="{'selected': currentRoute == '/Career'}" class="navbar-item" routerLink="/Career">
+            <p class="paragraph-subheader">Career</p>
+        </div>
+        <div [ngClass]="{'selected': currentRoute == '/Projects'}" class="navbar-item" routerLink="/Projects">
+            <p class="paragraph-subheader">Projects<br>Repos</p>
+        </div>
+    </div>
+    <div id="navbar-actions">
+        <button class="gradient-button clickable">Resume</button>
+    </div>
+</div>

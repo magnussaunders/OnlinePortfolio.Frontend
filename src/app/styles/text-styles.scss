@@ -1,0 +1,50 @@
+@use '~@angular/material' as material;
+@import '../theme/app.theme.scss';
+
+.section-header {
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: 400;
+    color: material.get-color-from-palette($blue-palette, 300-contrast);
+}
+
+.paragraph-header {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    color: material.get-color-from-palette($blue-palette, 400-contrast);
+}
+
+.paragraph-subheader {
+    font-family: Roboto Mono;
+    font-size: 16px;
+    font-weight: 400;
+    color: material.get-color-from-palette($blue-palette, 400-contrast);
+}
+
+.paragraph-body {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    color: material.get-color-from-palette($blue-palette, 300-contrast);
+}
+
+.paragraph-small {
+    font-family: Roboto Mono;
+    font-size: 10px;
+    color: material.get-color-from-palette($blue-palette, 400-contrast);
+}
+
+.paragraph-highlight {
+  font-family: Roboto Mono;
+    font-size: 12px;
+    color: material.get-color-from-palette($blue-palette, 400-contrast);
+}
+
+.accent {
+    color: material.get-color-from-palette($orange-palette, 500) !important;
+}
+
+.clickable {
+    color: material.get-color-from-palette($pink-palette, 500);
+}

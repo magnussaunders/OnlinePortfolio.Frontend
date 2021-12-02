@@ -1,0 +1,87 @@
+@use '~@angular/material' as material;
+@import '../../theme/app.theme.scss';
+
+#navbar {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    height: 75px;
+    min-height: 20px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 15px 0px 15px;
+    background: rgba(material.get-color-from-palette($blue-palette, 500), 0.8);
+    backdrop-filter: blur(2.5px);
+}
+
+img {
+    height: 50%;
+    width: auto;
+    margin-right: 10px;
+}
+
+#navbar-title {
+    position: relative;
+    display:flex;
+    align-items: center;
+    align-self: flex-start;
+    height: 100%;
+    cursor: pointer;
+}
+
+#navbar-items {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-grow:8;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    height: 75%;
+}
+
+.navbar-item {
+    display: flex;
+    align-self: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    height: auto;
+    box-sizing: border-box;
+    text-align: center;
+    border-bottom: 3px solid transparent;
+    transition: all .2s ease;
+    backface-visibility: hidden;
+    cursor: pointer;
+}
+
+p {
+    backface-visibility: hidden;
+    line-height: 16px;
+}
+
+.navbar-item:hover p {
+    color: material.get-color-from-palette($pink-palette, 500);
+    transition: all .2s ease;
+}
+
+.navbar-item:hover{
+    transform: perspective(1px) scale(1.1);
+    transition: all .2s ease;
+}
+
+
+.selected {
+    border-bottom: 3px solid material.get-color-from-palette($pink-palette, 500) !important;
+
+    p {
+        color: material.get-color-from-palette($pink-palette, 500) !important; 
+    }
+}
+
+#navbar-actions {
+    position: relative;
+    display:flex;
+    align-items: center;
+    align-self: center;
+}
