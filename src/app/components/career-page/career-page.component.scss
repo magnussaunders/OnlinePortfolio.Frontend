@@ -1,0 +1,198 @@
+@use '~@angular/material' as material;
+@import '../../theme/app.theme.scss';
+
+$callout-width: 10px;
+
+#career-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+
+#timeline-container {
+  position: relative;
+  width: 55%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+#center-line {
+  position: absolute;
+  height: 100%;
+  width: 2px;
+  background-color: white;
+}
+
+.timeline-item {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  &:nth-child(even) {
+    flex-direction: row;
+    .timeline-notch {
+      left: calc(50% - 8px);
+      border: 3px solid white;
+    }
+    .timeline-callout {
+      background-color: white;
+    }
+  }
+
+  &:nth-child(odd) {
+    flex-direction: row-reverse;
+    .timeline-notch {
+      right: calc(50% - 8px);
+      border: 3px solid white;
+    }
+    .timeline-callout {
+      background-color: white;
+    }
+  }
+}
+
+.timeline-card {
+  background: linear-gradient(material.get-color-from-palette($blue-palette, 500), material.get-color-from-palette($blue-palette, 500)) padding-box, linear-gradient(to bottom right,  white,  white 100%) border-box;
+  border: 3px solid transparent;
+  border-radius: 10px !important;
+  width: 45%;
+  padding: 10px;
+  box-sizing: border-box;
+  transition: all 0.5s ease;
+}
+
+ .mat-expansion-panel-header {
+  padding: 0px 5px 0px 0px !important;
+   border-radius: 0px !important;
+   &:hover {
+    background: material.get-color-from-palette($blue-palette, 500) !important;
+  }
+   div {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     img {
+       height: 50px;
+       aspect-ratio: 1;
+       border-radius: 50%;
+       margin-right: 10px;
+     }
+   }
+}
+
+::ng-deep.mat-expansion-panel-body {
+  padding: 0px !important;
+}
+
+.timeline-item-description {
+  overflow: hidden;
+  margin: 10px 0px;
+}
+
+.timeline-item-description-item {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-bottom: 10px;
+
+  img {
+    width: 12px;
+    aspect-ratio: 1;
+    margin-right: 5px;
+    transform: translateY(3px);
+  }
+
+  p {
+    margin: 0px;
+    font-size: 13px;
+  }
+}
+
+.tags-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10px 5px 0px 5px !important;
+}
+
+.tag {
+  margin: 0px 15px 0px 0px;
+}
+
+.timeline-callout {
+  width: 5%;
+  height: 3px;
+}
+
+.timeline-notch {
+  width: 10px;
+  height: 10px;
+  background-color: material.get-color-from-palette($blue-palette, 500);
+  border-radius: 50%;
+  position: absolute;
+
+}
+
+.timeline-date {
+  margin: 0px 20px;
+}
+
+.timeline-item.selected {
+  .timeline-card {
+    background: linear-gradient(material.get-color-from-palette($blue-palette, 500), material.get-color-from-palette($blue-palette, 500)) padding-box, linear-gradient(to bottom right, material.get-color-from-palette($pink-palette, 500), material.get-color-from-palette($orange-palette, 500) 100%) border-box;
+  }
+
+  &:nth-child(even) {
+    flex-direction: row;
+    .timeline-notch {
+      left: calc(50% - 8px);
+      border: 3px solid #f44a1c;
+    }
+    .timeline-callout {
+      background-color: #f44a1c;
+    }
+  }
+
+  &:nth-child(odd) {
+    flex-direction: row-reverse;
+    .timeline-notch {
+      right: calc(50% - 8px);
+      border: 3px solid #f41762;
+    }
+    .timeline-callout {
+      background-color: #f41762;
+    }
+  }
+}
+
+#experience-container {
+    width: 15%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.experience-item {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-content: center;
+
+    p {
+        margin: 10px 20px;
+        width: 50%;
+    }
+
+}
+
+
+:host {
+    height: 100%;
+}

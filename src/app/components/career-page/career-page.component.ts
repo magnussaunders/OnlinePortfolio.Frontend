@@ -12,4 +12,19 @@ export class CareerPageComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  timelineItemSelect(element: any) {
+    let parentTimelineItem = element.closest('.timeline-item')
+
+    if (parentTimelineItem.classList.contains('selected')) {
+      parentTimelineItem.classList.remove('selected')
+    } else {
+      let timelineItems = document.getElementsByClassName('timeline-item')
+
+      for (let i=0; i < timelineItems.length; i++) {
+        timelineItems[i].classList.remove('selected')
+      }
+
+      parentTimelineItem.classList.add('selected')
+    }
+  }
 }
