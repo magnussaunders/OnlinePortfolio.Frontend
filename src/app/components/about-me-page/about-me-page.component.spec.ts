@@ -1,25 +1,25 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing'
 
-import { AboutMePageComponent } from './about-me-page.component';
+import { AboutMePageComponent } from './about-me-page.component'
 
 describe('AboutMePageComponent', () => {
-  let component: AboutMePageComponent;
-  let fixture: ComponentFixture<AboutMePageComponent>;
+    let component: AboutMePageComponent
+    let fixture: ComponentFixture<AboutMePageComponent>
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      declarations: [ AboutMePageComponent ]
+    beforeEach(async () => {
+        await TestBed.configureTestingModule({
+            declarations: [ AboutMePageComponent ]
+        })
+            .compileComponents()
     })
-    .compileComponents();
-  });
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(AboutMePageComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+    beforeEach(() => {
+        fixture = TestBed.createComponent(AboutMePageComponent)
+        component = fixture.componentInstance
+        fixture.detectChanges()
+    })
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+    it('should create', () => {
+        expect(component).toBeTruthy()
+    })
+})

@@ -3,14 +3,14 @@
 
 #navbar {
     position: fixed;
-    left: 0px;
-    top: 0px;
-    right: 0px;
+    left: 0;
+    top: 0;
+    right: 0;
     height: 75px;
     min-height: 20px;
     display: flex;
     flex-direction: row;
-    padding: 10px 15px 0px 15px;
+    padding: 10px 15px 0 15px;
     background: rgba(material.get-color-from-palette($blue-palette, 500), 0.8);
     backdrop-filter: blur(2.5px);
 }
@@ -75,7 +75,7 @@ p {
     border-bottom: 3px solid material.get-color-from-palette($pink-palette, 500) !important;
 
     p {
-        color: material.get-color-from-palette($pink-palette, 500) !important; 
+        color: material.get-color-from-palette($pink-palette, 500) !important;
     }
 }
 

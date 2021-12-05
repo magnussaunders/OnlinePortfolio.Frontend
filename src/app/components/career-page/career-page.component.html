@@ -1,129 +1,240 @@
 <div id="career-container">
-    <div id="experience-container">
-<!--        <div class="experience-item">-->
-<!--           <p class="paragraph-header">Technical Consultant</p>-->
-<!--           <p class="paragraph-subheader accent">2 yrs</p>-->
-<!--        </div>-->
-<!--        <div class="experience-item">-->
-<!--            <p class="paragraph-header">Junior Developer</p>-->
-<!--            <p class="paragraph-subheader accent">4</p>-->
-<!--        </div>  -->
-    </div>
-  <mat-accordion id="timeline-container" multi="false">
-    <div id="center-line"></div>
-    <div class="timeline-item">
-      <mat-expansion-panel class="timeline-card" hideToggle>
-        <mat-expansion-panel-header (click)="timelineItemSelect($event.target)">
-          <div>
-            <img src="../../../assets/images/1611930413708.jpg">
-            <p class="paragraph-header">Technical Consultant <span class="paragraph-header clickable">@ CA Southern Africa</span></p>
+  <div class="title">
+    <div class="line"></div>
+    <h1 class="section-header">My career</h1>
+    <div class="line"></div>
+  </div>
+  <div id="timeline-container">
+    <mat-accordion id="timeline-items" multi="false">
+  <!--    <div id="center-line"></div>-->
+      <div class="timeline-item">
+        <mat-expansion-panel class="timeline-card" hideToggle>
+          <mat-expansion-panel-header (click)="timelineItemSelect($event.target)">
+            <div>
+              <img src="../../../assets/images/1611930413708.jpg">
+              <p class="paragraph-header">Technical Consultant <span class="paragraph-header clickable">@ CA Southern Africa</span></p>
+            </div>
+          </mat-expansion-panel-header>
+          <div class="timeline-item-description">
+            <div class="timeline-item-description-item">
+              <img src="../../../assets/images/timeline-description-bullet.svg">
+              <p class="paragraph-body">Implemented TICBO Jaspersoft as a Business Intelligence solution. Designed and built data visualisations and dashboards for integrations with other tools and solutions.</p>
+            </div>
+            <div class="timeline-item-description-item">
+              <img src="../../../assets/images/timeline-description-bullet.svg">
+              <p class="paragraph-body">Customized and Implemented CA Servicedesk Manager. Integrated CA SDM with other business management solutions.</p>
+            </div>
+            <div class="timeline-item-description-item">
+              <img src="../../../assets/images/timeline-description-bullet.svg">
+              <p class="paragraph-body">Installed and implemented CA Test Data Manager. Was positioned at a client as  Test Data Engineer responsible for managing the client’s test data. </p>
+            </div>
+            <div class="timeline-item-description-item">
+              <img src="../../../assets/images/timeline-description-bullet.svg">
+              <p class="paragraph-body">Clients included Parliament, Dimension Data, Sanlam, MMI, Old Mutual, Woolworths, Truworths, TFG, PepKor, eThekwini, Shoprite and UWC.</p>
+            </div>
+            <div class="tags-container">
+              <p class="tag paragraph-highlight accent">Node.js</p>
+              <p class="tag paragraph-highlight accent">Angular</p>
+              <p class="tag paragraph-highlight accent">MongoDB</p>
+              <p class="tag paragraph-highlight accent">GitHub Actions</p>
+              <p class="tag paragraph-highlight accent">Docker</p>
+            </div>
           </div>
-        </mat-expansion-panel-header>
-        <div class="timeline-item-description">
-          <div class="timeline-item-description-item">
-            <img src="../../../assets/images/timeline-description-bullet.svg">
-            <p class="paragraph-body">Implemented TICBO Jaspersoft as a Business Intelligence solution. Designed and built data visualisations and dashboards for integrations with other tools and solutions.</p>
+        </mat-expansion-panel>
+        <div class="timeline-callout"></div>
+        <div class="timeline-notch"></div>
+        <p class="timeline-date paragraph-subheader accent">Aug 2021</p>
+      </div>
+      <div class="timeline-item">
+        <mat-expansion-panel class="timeline-card" hideToggle>
+          <mat-expansion-panel-header (click)="timelineItemSelect($event.target)">
+            <div>
+              <img src="../../../assets/images/mini-logo2.png">
+              <p class="paragraph-header">Junior Developer <span class="paragraph-header clickable">@ Runninghill Software Development</span></p>
+            </div>
+          </mat-expansion-panel-header>
+          <div class="timeline-item-description">
+            <div class="timeline-item-description-item">
+              <img src="../../../assets/images/timeline-description-bullet.svg">
+              <p class="paragraph-body">Implemented TICBO Jaspersoft as a Business Intelligence solution. Designed and built data visualisations and dashboards for integrations with other tools and solutions.</p>
+            </div>
+            <div class="timeline-item-description-item">
+              <img src="../../../assets/images/timeline-description-bullet.svg">
+              <p class="paragraph-body">Customized and Implemented CA Servicedesk Manager. Integrated CA SDM with other business management solutions.</p>
+            </div>
+            <div class="timeline-item-description-item">
+              <img src="../../../assets/images/timeline-description-bullet.svg">
+              <p class="paragraph-body">Installed and implemented CA Test Data Manager. Was positioned at a client as  Test Data Engineer responsible for managing the client’s test data. </p>
+            </div>
+            <div class="timeline-item-description-item">
+              <img src="../../../assets/images/timeline-description-bullet.svg">
+              <p class="paragraph-body">Clients included Parliament, Dimension Data, Sanlam, MMI, Old Mutual, Woolworths, Truworths, TFG, PepKor, eThekwini, Shoprite and UWC.</p>
+            </div>
+            <div class="tags-container">
+              <p class="tag paragraph-highlight accent">Node.js</p>
+              <p class="tag paragraph-highlight accent">Angular</p>
+              <p class="tag paragraph-highlight accent">MongoDB</p>
+              <p class="tag paragraph-highlight accent">GitHub Actions</p>
+              <p class="tag paragraph-highlight accent">Docker</p>
+            </div>
           </div>
-          <div class="timeline-item-description-item">
-            <img src="../../../assets/images/timeline-description-bullet.svg">
-            <p class="paragraph-body">Customized and Implemented CA Servicedesk Manager. Integrated CA SDM with other business management solutions.</p>
+        </mat-expansion-panel>
+        <div class="timeline-callout"></div>
+        <div class="timeline-notch"></div>
+        <p class="timeline-date paragraph-subheader accent">Apr 2021</p>
+      </div>
+      <div class="timeline-item">
+        <mat-expansion-panel class="timeline-card" hideToggle>
+          <mat-expansion-panel-header (click)="timelineItemSelect($event.target)">
+            <div>
+              <img src="../../../assets/images/1611930413708.jpg">
+              <p class="paragraph-header">Technical Consultant <span class="paragraph-header clickable">@ CA Southern Africa</span></p>
+            </div>
+          </mat-expansion-panel-header>
+          <div class="timeline-item-description">
+            <div class="timeline-item-description-item">
+              <img src="../../../assets/images/timeline-description-bullet.svg">
+              <p class="paragraph-body">Implemented TICBO Jaspersoft as a Business Intelligence solution. Designed and built data visualisations and dashboards for integrations with other tools and solutions.</p>
+            </div>
+            <div class="timeline-item-description-item">
+              <img src="../../../assets/images/timeline-description-bullet.svg">
+              <p class="paragraph-body">Customized and Implemented CA Servicedesk Manager. Integrated CA SDM with other business management solutions.</p>
+            </div>
+            <div class="timeline-item-description-item">
+              <img src="../../../assets/images/timeline-description-bullet.svg">
+              <p class="paragraph-body">Installed and implemented CA Test Data Manager. Was positioned at a client as  Test Data Engineer responsible for managing the client’s test data. </p>
+            </div>
+            <div class="timeline-item-description-item">
+              <img src="../../../assets/images/timeline-description-bullet.svg">
+              <p class="paragraph-body">Clients included Parliament, Dimension Data, Sanlam, MMI, Old Mutual, Woolworths, Truworths, TFG, PepKor, eThekwini, Shoprite and UWC.</p>
+            </div>
+            <div class="tags-container">
+              <p class="tag paragraph-highlight accent">Node.js</p>
+              <p class="tag paragraph-highlight accent">Angular</p>
+              <p class="tag paragraph-highlight accent">MongoDB</p>
+              <p class="tag paragraph-highlight accent">GitHub Actions</p>
+              <p class="tag paragraph-highlight accent">Docker</p>
+            </div>
           </div>
-          <div class="timeline-item-description-item">
-            <img src="../../../assets/images/timeline-description-bullet.svg">
-            <p class="paragraph-body">Installed and implemented CA Test Data Manager. Was positioned at a client as  Test Data Engineer responsible for managing the client’s test data. </p>
+        </mat-expansion-panel>
+        <div class="timeline-callout"></div>
+        <div class="timeline-notch"></div>
+        <p class="timeline-date paragraph-subheader accent">May 2019</p>
+      </div>
+      <div class="timeline-item">
+        <mat-expansion-panel class="timeline-card" hideToggle>
+          <mat-expansion-panel-header (click)="timelineItemSelect($event.target)">
+            <div>
+              <img src="../../../assets/images/1611930413708.jpg">
+              <p class="paragraph-header">Technical Consultant <span class="paragraph-header clickable">@ CA Southern Africa</span></p>
+            </div>
+          </mat-expansion-panel-header>
+          <div class="timeline-item-description">
+            <div class="timeline-item-description-item">
+              <img src="../../../assets/images/timeline-description-bullet.svg">
+              <p class="paragraph-body">Implemented TICBO Jaspersoft as a Business Intelligence solution. Designed and built data visualisations and dashboards for integrations with other tools and solutions.</p>
+            </div>
+            <div class="timeline-item-description-item">
+              <img src="../../../assets/images/timeline-description-bullet.svg">
+              <p class="paragraph-body">Customized and Implemented CA Servicedesk Manager. Integrated CA SDM with other business management solutions.</p>
+            </div>
+            <div class="timeline-item-description-item">
+              <img src="../../../assets/images/timeline-description-bullet.svg">
+              <p class="paragraph-body">Installed and implemented CA Test Data Manager. Was positioned at a client as  Test Data Engineer responsible for managing the client’s test data. </p>
+            </div>
+            <div class="timeline-item-description-item">
+              <img src="../../../assets/images/timeline-description-bullet.svg">
+              <p class="paragraph-body">Clients included Parliament, Dimension Data, Sanlam, MMI, Old Mutual, Woolworths, Truworths, TFG, PepKor, eThekwini, Shoprite and UWC.</p>
+            </div>
+            <div class="tags-container">
+              <p class="tag paragraph-highlight accent">Node.js</p>
+              <p class="tag paragraph-highlight accent">Angular</p>
+              <p class="tag paragraph-highlight accent">MongoDB</p>
+              <p class="tag paragraph-highlight accent">GitHub Actions</p>
+              <p class="tag paragraph-highlight accent">Docker</p>
+            </div>
           </div>
-          <div class="timeline-item-description-item">
-            <img src="../../../assets/images/timeline-description-bullet.svg">
-            <p class="paragraph-body">Clients included Parliament, Dimension Data, Sanlam, MMI, Old Mutual, Woolworths, Truworths, TFG, PepKor, eThekwini, Shoprite and UWC.</p>
+        </mat-expansion-panel>
+        <div class="timeline-callout"></div>
+        <div class="timeline-notch"></div>
+        <p class="timeline-date paragraph-subheader accent">Aug 2021</p>
+      </div>
+      <div class="timeline-item">
+        <mat-expansion-panel class="timeline-card" hideToggle>
+          <mat-expansion-panel-header (click)="timelineItemSelect($event.target)">
+            <div>
+              <img src="../../../assets/images/mini-logo2.png">
+              <p class="paragraph-header">Junior Developer <span class="paragraph-header clickable">@ Runninghill Software Development</span></p>
+            </div>
+          </mat-expansion-panel-header>
+          <div class="timeline-item-description">
+            <div class="timeline-item-description-item">
+              <img src="../../../assets/images/timeline-description-bullet.svg">
+              <p class="paragraph-body">Implemented TICBO Jaspersoft as a Business Intelligence solution. Designed and built data visualisations and dashboards for integrations with other tools and solutions.</p>
+            </div>
+            <div class="timeline-item-description-item">
+              <img src="../../../assets/images/timeline-description-bullet.svg">
+              <p class="paragraph-body">Customized and Implemented CA Servicedesk Manager. Integrated CA SDM with other business management solutions.</p>
+            </div>
+            <div class="timeline-item-description-item">
+              <img src="../../../assets/images/timeline-description-bullet.svg">
+              <p class="paragraph-body">Installed and implemented CA Test Data Manager. Was positioned at a client as  Test Data Engineer responsible for managing the client’s test data. </p>
+            </div>
+            <div class="timeline-item-description-item">
+              <img src="../../../assets/images/timeline-description-bullet.svg">
+              <p class="paragraph-body">Clients included Parliament, Dimension Data, Sanlam, MMI, Old Mutual, Woolworths, Truworths, TFG, PepKor, eThekwini, Shoprite and UWC.</p>
+            </div>
+            <div class="tags-container">
+              <p class="tag paragraph-highlight accent">Node.js</p>
+              <p class="tag paragraph-highlight accent">Angular</p>
+              <p class="tag paragraph-highlight accent">MongoDB</p>
+              <p class="tag paragraph-highlight accent">GitHub Actions</p>
+              <p class="tag paragraph-highlight accent">Docker</p>
+            </div>
           </div>
-          <div class="tags-container">
-            <p class="tag paragraph-highlight accent">Node.js</p>
-            <p class="tag paragraph-highlight accent">Angular</p>
-            <p class="tag paragraph-highlight accent">MongoDB</p>
-            <p class="tag paragraph-highlight accent">GitHub Actions</p>
-            <p class="tag paragraph-highlight accent">Docker</p>
+        </mat-expansion-panel>
+        <div class="timeline-callout"></div>
+        <div class="timeline-notch"></div>
+        <p class="timeline-date paragraph-subheader accent">Apr 2021</p>
+      </div>
+      <div class="timeline-item">
+        <mat-expansion-panel class="timeline-card" hideToggle>
+          <mat-expansion-panel-header (click)="timelineItemSelect($event.target)">
+            <div>
+              <img src="../../../assets/images/1611930413708.jpg">
+              <p class="paragraph-header">Technical Consultant <span class="paragraph-header clickable">@ CA Southern Africa</span></p>
+            </div>
+          </mat-expansion-panel-header>
+          <div class="timeline-item-description">
+            <div class="timeline-item-description-item">
+              <img src="../../../assets/images/timeline-description-bullet.svg">
+              <p class="paragraph-body">Implemented TICBO Jaspersoft as a Business Intelligence solution. Designed and built data visualisations and dashboards for integrations with other tools and solutions.</p>
+            </div>
+            <div class="timeline-item-description-item">
+              <img src="../../../assets/images/timeline-description-bullet.svg">
+              <p class="paragraph-body">Customized and Implemented CA Servicedesk Manager. Integrated CA SDM with other business management solutions.</p>
+            </div>
+            <div class="timeline-item-description-item">
+              <img src="../../../assets/images/timeline-description-bullet.svg">
+              <p class="paragraph-body">Installed and implemented CA Test Data Manager. Was positioned at a client as  Test Data Engineer responsible for managing the client’s test data. </p>
+            </div>
+            <div class="timeline-item-description-item">
+              <img src="../../../assets/images/timeline-description-bullet.svg">
+              <p class="paragraph-body">Clients included Parliament, Dimension Data, Sanlam, MMI, Old Mutual, Woolworths, Truworths, TFG, PepKor, eThekwini, Shoprite and UWC.</p>
+            </div>
+            <div class="tags-container">
+              <p class="tag paragraph-highlight accent">Node.js</p>
+              <p class="tag paragraph-highlight accent">Angular</p>
+              <p class="tag paragraph-highlight accent">MongoDB</p>
+              <p class="tag paragraph-highlight accent">GitHub Actions</p>
+              <p class="tag paragraph-highlight accent">Docker</p>
+            </div>
           </div>
-        </div>
-      </mat-expansion-panel>
-      <div class="timeline-callout"></div>
-      <div class="timeline-notch"></div>
-      <p class="timeline-date paragraph-subheader accent">Aug 2021</p>
-    </div>
-    <div class="timeline-item">
-      <mat-expansion-panel class="timeline-card" hideToggle>
-        <mat-expansion-panel-header (click)="timelineItemSelect($event.target)">
-          <div>
-            <img src="../../../assets/images/mini-logo2.png">
-            <p class="paragraph-header">Junior Developer <span class="paragraph-header clickable">@ Runninghill Software Development</span></p>
-          </div>
-        </mat-expansion-panel-header>
-        <div class="timeline-item-description">
-          <div class="timeline-item-description-item">
-            <img src="../../../assets/images/timeline-description-bullet.svg">
-            <p class="paragraph-body">Implemented TICBO Jaspersoft as a Business Intelligence solution. Designed and built data visualisations and dashboards for integrations with other tools and solutions.</p>
-          </div>
-          <div class="timeline-item-description-item">
-            <img src="../../../assets/images/timeline-description-bullet.svg">
-            <p class="paragraph-body">Customized and Implemented CA Servicedesk Manager. Integrated CA SDM with other business management solutions.</p>
-          </div>
-          <div class="timeline-item-description-item">
-            <img src="../../../assets/images/timeline-description-bullet.svg">
-            <p class="paragraph-body">Installed and implemented CA Test Data Manager. Was positioned at a client as  Test Data Engineer responsible for managing the client’s test data. </p>
-          </div>
-          <div class="timeline-item-description-item">
-            <img src="../../../assets/images/timeline-description-bullet.svg">
-            <p class="paragraph-body">Clients included Parliament, Dimension Data, Sanlam, MMI, Old Mutual, Woolworths, Truworths, TFG, PepKor, eThekwini, Shoprite and UWC.</p>
-          </div>
-          <div class="tags-container">
-            <p class="tag paragraph-highlight accent">Node.js</p>
-            <p class="tag paragraph-highlight accent">Angular</p>
-            <p class="tag paragraph-highlight accent">MongoDB</p>
-            <p class="tag paragraph-highlight accent">GitHub Actions</p>
-            <p class="tag paragraph-highlight accent">Docker</p>
-          </div>
-        </div>
-      </mat-expansion-panel>
-      <div class="timeline-callout"></div>
-      <div class="timeline-notch"></div>
-      <p class="timeline-date paragraph-subheader accent">Apr 2021</p>
-    </div>
-    <div class="timeline-item">
-      <mat-expansion-panel class="timeline-card" hideToggle>
-        <mat-expansion-panel-header (click)="timelineItemSelect($event.target)">
-          <div>
-            <img src="../../../assets/images/1611930413708.jpg">
-            <p class="paragraph-header">Technical Consultant <span class="paragraph-header clickable">@ CA Southern Africa</span></p>
-          </div>
-        </mat-expansion-panel-header>
-        <div class="timeline-item-description">
-          <div class="timeline-item-description-item">
-            <img src="../../../assets/images/timeline-description-bullet.svg">
-            <p class="paragraph-body">Implemented TICBO Jaspersoft as a Business Intelligence solution. Designed and built data visualisations and dashboards for integrations with other tools and solutions.</p>
-          </div>
-          <div class="timeline-item-description-item">
-            <img src="../../../assets/images/timeline-description-bullet.svg">
-            <p class="paragraph-body">Customized and Implemented CA Servicedesk Manager. Integrated CA SDM with other business management solutions.</p>
-          </div>
-          <div class="timeline-item-description-item">
-            <img src="../../../assets/images/timeline-description-bullet.svg">
-            <p class="paragraph-body">Installed and implemented CA Test Data Manager. Was positioned at a client as  Test Data Engineer responsible for managing the client’s test data. </p>
-          </div>
-          <div class="timeline-item-description-item">
-            <img src="../../../assets/images/timeline-description-bullet.svg">
-            <p class="paragraph-body">Clients included Parliament, Dimension Data, Sanlam, MMI, Old Mutual, Woolworths, Truworths, TFG, PepKor, eThekwini, Shoprite and UWC.</p>
-          </div>
-          <div class="tags-container">
-            <p class="tag paragraph-highlight accent">Node.js</p>
-            <p class="tag paragraph-highlight accent">Angular</p>
-            <p class="tag paragraph-highlight accent">MongoDB</p>
-            <p class="tag paragraph-highlight accent">GitHub Actions</p>
-            <p class="tag paragraph-highlight accent">Docker</p>
-          </div>
-        </div>
-      </mat-expansion-panel>
-      <div class="timeline-callout"></div>
-      <div class="timeline-notch"></div>
-      <p class="timeline-date paragraph-subheader accent">May 2019</p>
-    </div>
-  </mat-accordion>
+        </mat-expansion-panel>
+        <div class="timeline-callout"></div>
+        <div class="timeline-notch"></div>
+        <p class="timeline-date paragraph-subheader accent">May 2019</p>
+      </div>
+    </mat-accordion>
+  </div>
 </div>

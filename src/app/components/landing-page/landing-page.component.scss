@@ -63,23 +63,23 @@
 }
 
 #greeting {
-    margin: 0px 0px;
+    margin: 0 0;
     font-size: 20px;
 }
 
 #my-name {
-    margin: 5px 0px;
+    margin: 5px 0;
     font-size: 72px;
 }
 
 #headline {
-    margin: 5px 0px;
+    margin: 5px 0;
     color: material.get-color-from-palette($blue-palette, 500-contrast) !important;
     font-size: 60px;
 }
 
 #blurb {
-    margin: 0px 0px;
+    margin: 0 0;
     color: material.get-color-from-palette($blue-palette, 500-contrast) !important;
     font-size: 20px;
 }

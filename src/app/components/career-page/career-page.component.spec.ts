@@ -1,25 +1,25 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing'
 
-import { CareerPageComponent } from './career-page.component';
+import { CareerPageComponent } from './career-page.component'
 
 describe('CareerPageComponent', () => {
-  let component: CareerPageComponent;
-  let fixture: ComponentFixture<CareerPageComponent>;
+    let component: CareerPageComponent
+    let fixture: ComponentFixture<CareerPageComponent>
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      declarations: [ CareerPageComponent ]
+    beforeEach(async () => {
+        await TestBed.configureTestingModule({
+            declarations: [ CareerPageComponent ]
+        })
+            .compileComponents()
     })
-    .compileComponents();
-  });
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(CareerPageComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+    beforeEach(() => {
+        fixture = TestBed.createComponent(CareerPageComponent)
+        component = fixture.componentInstance
+        fixture.detectChanges()
+    })
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+    it('should create', () => {
+        expect(component).toBeTruthy()
+    })
+})

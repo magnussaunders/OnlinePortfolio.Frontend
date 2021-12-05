@@ -1,30 +1,28 @@
-import { Component, OnInit } from '@angular/core';
+/* eslint-disable no-extra-parens */
+import { Component, OnInit } from '@angular/core'
 
 @Component({
-  selector: 'app-career-page',
-  templateUrl: './career-page.component.html',
-  styleUrls: ['./career-page.component.scss']
+    selector: 'app-career-page',
+    templateUrl: './career-page.component.html',
+    styleUrls: ['./career-page.component.scss']
 })
-export class CareerPageComponent implements OnInit {
+export class CareerPageComponent {
 
-  constructor() { }
+    timelineItemSelect(element: EventTarget) {
+        const parentTimelineItem = (element as HTMLElement).closest('.timeline-item')
+        if (parentTimelineItem) {
+            if (parentTimelineItem.classList.contains('selected')) {
+                parentTimelineItem.classList.remove('selected')
+            } else {
+                const timelineItems = document.getElementsByClassName('timeline-item')
 
-  ngOnInit(): void {
-  }
+                for (let i = 0; i < timelineItems.length; i++) {
+                    timelineItems[i].classList.remove('selected')
+                }
 
-  timelineItemSelect(element: any) {
-    let parentTimelineItem = element.closest('.timeline-item')
-
-    if (parentTimelineItem.classList.contains('selected')) {
-      parentTimelineItem.classList.remove('selected')
-    } else {
-      let timelineItems = document.getElementsByClassName('timeline-item')
-
-      for (let i=0; i < timelineItems.length; i++) {
-        timelineItems[i].classList.remove('selected')
-      }
-
-      parentTimelineItem.classList.add('selected')
+                parentTimelineItem.classList.add('selected')
+                parentTimelineItem.scrollIntoView()
+            }
+        }
     }
-  }
 }
