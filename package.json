@@ -12,6 +12,7 @@
   },
   "private": true,
   "dependencies": {
+    "@angular-eslint/eslint-plugin": "^13.0.1",
     "@angular/animations": "12.2.0",
     "@angular/cdk": "12.2.12",
     "@angular/common": "12.2.0",
