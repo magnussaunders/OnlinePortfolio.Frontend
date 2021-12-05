@@ -25,6 +25,7 @@ export class CareerPageComponent implements OnInit {
       }
 
       parentTimelineItem.classList.add('selected')
+      parentTimelineItem.scrollIntoView()
     }
   }
 }

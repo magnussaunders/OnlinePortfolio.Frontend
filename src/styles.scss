@@ -28,3 +28,9 @@ html {
     width: 100%;
     height: 100%;
 }
+
+.line {
+  width: 75px;
+  height: 2px;
+  background-color: rgba(material.get-color-from-palette($blue-palette, 300-contrast), 0.3);
+}

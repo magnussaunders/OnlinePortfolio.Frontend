@@ -217,12 +217,6 @@ carousel {
   margin: 0px 20px 0px 0px;
 }
 
-.line {
-  width: 100px;
-  height: 2px;
-  background-color: rgba(material.get-color-from-palette($blue-palette, 300-contrast), 0.3);
-}
-
 #more-projects-title {
   display: flex;
   flex-direction: row;
