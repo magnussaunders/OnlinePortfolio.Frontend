@@ -8,7 +8,8 @@ import { Component, OnInit } from '@angular/core'
 })
 export class CareerPageComponent {
 
-    timelineItemSelect(element: EventTarget) {
+    // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
+    timelineItemSelect(element: any) {
         const parentTimelineItem = (element as HTMLElement).closest('.timeline-item')
         if (parentTimelineItem) {
             if (parentTimelineItem.classList.contains('selected')) {
