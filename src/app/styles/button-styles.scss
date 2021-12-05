@@ -4,11 +4,10 @@
 .gradient-button {
     display: inline-block;
     cursor: pointer;
-    background: linear-gradient(material.get-color-from-palette($blue-palette, 500), material.get-color-from-palette($blue-palette, 500)) padding-box, linear-gradient(to bottom right,  material.get-color-from-palette($pink-palette, 500),  material.get-color-from-palette($orange-palette, 500) 100%) border-box;
-    border: 3px solid transparent;
-    background-color:  material.get-color-from-palette($blue-palette, 500);
-    border-radius: 10px;
-    margin-bottom: 0px;
+  border: 3px solid transparent;
+  background: material.get-color-from-palette($blue-palette, 500) linear-gradient(material.get-color-from-palette($blue-palette, 500), material.get-color-from-palette($blue-palette, 500)) linear-gradient(to bottom right, material.get-color-from-palette($pink-palette, 500), material.get-color-from-palette($orange-palette, 500) 100%);
+  border-radius: 10px;
+    margin-bottom: 0;
     font-weight: 600;
     font-size: 14px;
     padding: 5px 10px;

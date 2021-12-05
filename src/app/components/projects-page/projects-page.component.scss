@@ -6,7 +6,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0px 0px 100px 0px;
+  margin: 0 0 100px 0;
 }
 
 #featured-projects-container {
@@ -21,7 +21,7 @@
   position: relative;
   height: 40vh;
   display: flex;
-  margin: 20px 0px;
+  margin: 20px 0;
   &:hover img {
     filter: grayscale(0);
     opacity: 100%;
@@ -33,7 +33,7 @@
       align-items: flex-end;
     }
      .featured-project-images {
-      left: 0px;
+      left: 0;
     }
   }
   &:nth-child(even){
@@ -43,7 +43,7 @@
       align-items: flex-start;
     }
      .featured-project-images {
-      right: 0px;
+      right: 0;
     }
   }
   justify-content: flex-end;
@@ -59,13 +59,13 @@
 }
 
 .featured-project-date {
-  margin: 0px;
+  margin: 0;
 }
 .featured-project-title {
-  margin: 0px 0px 5px 0px;
+  margin: 0 0 5px 0;
 }
 .featured-project-description-text {
-  margin: 0px;
+  margin: 0;
 }
 
 .featured-project-images {
@@ -126,7 +126,7 @@ carousel {
 }
 
 .project-description {
-  margin: 15px 0px;
+  margin: 15px 0;
 }
 
 #blur-overlay {
@@ -144,7 +144,7 @@ carousel {
   flex-direction: row;
   flex-wrap: wrap;
   overflow: hidden;
-  max-height: 0px;
+  max-height: 0;
 }
 
 .project-resource {
@@ -154,7 +154,7 @@ carousel {
   border-radius: 15px;
   background-color: material.get-color-from-palette($blue-palette, 600);
   align-items: center;
-  margin: 2px 0px;
+  margin: 2px 0;
 
   &:hover {
      p {
@@ -168,7 +168,7 @@ carousel {
   }
 
   & p {
-      margin: 0px 10px 0px 5px;
+      margin: 0 10px 0 5px;
   }
 }
 
@@ -195,7 +195,7 @@ carousel {
     transform: scale(1.1);
     background: linear-gradient(material.get-color-from-palette($blue-palette, 400), material.get-color-from-palette($blue-palette, 400)) padding-box, linear-gradient(to bottom right, material.get-color-from-palette($pink-palette, 500), material.get-color-from-palette($orange-palette, 500) 100%) border-box;
     filter: blur(0px);
-    box-shadow: 0px 0px 50px 50px material.get-color-from-palette($blue-palette, 500);
+    box-shadow: 0 0 50px 50px material.get-color-from-palette($blue-palette, 500);
   }
    .card {
     padding: 10px;
@@ -210,11 +210,11 @@ carousel {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 10px 0px 0px 0px !important;
+  padding: 10px 0 0 0 !important;
 }
 
 .tag {
-  margin: 0px 20px 0px 0px;
+  margin: 0 20px 0 0;
 }
 
 #more-projects-title {
