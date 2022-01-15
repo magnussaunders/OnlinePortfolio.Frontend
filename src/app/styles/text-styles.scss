@@ -10,21 +10,21 @@
 
 .paragraph-header {
     font-family: Roboto;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 400;
     color: material.get-color-from-palette($blue-palette, 400-contrast);
 }
 
 .paragraph-subheader {
     font-family: Roboto Mono;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     color: material.get-color-from-palette($blue-palette, 400-contrast);
 }
 
 .paragraph-body {
     font-family: Roboto;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     color: material.get-color-from-palette($blue-palette, 300-contrast);
 }
@@ -37,7 +37,7 @@
 
 .paragraph-highlight {
   font-family: Roboto Mono;
-    font-size: 14px;
+    font-size: 16px;
     color: material.get-color-from-palette($blue-palette, 400-contrast);
 }
 
