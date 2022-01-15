@@ -51,9 +51,11 @@
 
   & .project-resources {
     max-height: fit-content;
+    margin: 7px 0;
+    justify-content: end;
      .project-resource {
       background: material.get-color-from-palette($blue-palette, 400);
-      margin: 10px 5px;
+      margin: 3px 5px;
     }
   }
 }
@@ -157,7 +159,7 @@ carousel {
   margin: 2px 0;
 
   &:hover {
-     p {
+     a {
       color: material.get-color-from-palette($pink-palette, 600);
     }
   }
@@ -167,8 +169,9 @@ carousel {
     width: auto;
   }
 
-  & p {
-      margin: 0 10px 0 5px;
+  & a {
+    margin: 0 10px 0 5px;
+    text-decoration: none;
   }
 }
 
