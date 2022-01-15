@@ -10,6 +10,8 @@ import { CareerPageComponent } from './components/career-page/career-page.compon
 import { ProjectsPageComponent } from './components/projects-page/projects-page.component'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { MatExpansionModule } from '@angular/material/expansion'
+import { HttpClientModule } from '@angular/common/http'
+
 @NgModule({
     declarations: [
         AppComponent,
@@ -24,7 +26,8 @@ import { MatExpansionModule } from '@angular/material/expansion'
         BrowserModule,
         AppRoutingModule,
         MatExpansionModule,
-        BrowserAnimationsModule
+        BrowserAnimationsModule,
+        HttpClientModule
     ],
     providers: [],
     bootstrap: [AppComponent]
