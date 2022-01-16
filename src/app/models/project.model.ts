@@ -21,8 +21,7 @@ export class Project {
         project.resources = (jsonObj.resources as Record<string, unknown>[]).map(
             currentResource => ProjectResource.fromJson(currentResource)
         )
-        // eslint-disable-next-line no-extra-parens
-        project.tags = (jsonObj.tags as string[]).sort((a, b) => a.length - b.length)
+        project.tags = jsonObj.tags as string[]
 
         return project
     }
